@@ -56,6 +56,14 @@ anchorjs: true                          # if you want to customize anchor. check
 # Share component is depend on Comment so we can NOT use share only.
 #duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
+#gitalk settings
+gitalk:
+  enable: true #用来做启用判断可以不用
+  owner: implistarry #Github 用户名,
+  repo: blogtalk #储存评论issue的github仓库名
+  admin: implistarry #Github 用户名,
+  clientID: 891c9639c873f63aff05 #`Github Application clientID`
+  clientSecret: c3fbd2890ef11b4aef55616034e3f444d71f9ff8 #`Github Application clientSecret`
 
 # Analytics settings
 #Baidu Analytics
