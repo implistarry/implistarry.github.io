@@ -239,3 +239,8 @@ deploy:
   repository: https://github.com/implistarry/blog-hexo-netlify-n.git
   branch: master
   message: Update CNAME
+
+# https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral
+upyun:
+  logo: /img/upyun_logo.png
+  url: https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral
