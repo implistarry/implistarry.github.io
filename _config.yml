@@ -90,20 +90,20 @@ featured-condition-size: 0              # A tag will be featured if the size of 
 
 
 ## Friends
-friends: [
-    {
-        title: "CSDN Blog 胡伟煌",
-        href: "http://blog.csdn.net/huwh_"
-    },
-    {
-        title: "DockOne 胡伟煌",
-        href: "http://dockone.io/people/胡伟煌"
-    },
-    {
-        title: "阿里云栖社区 胡伟煌",
-        href: "https://yq.aliyun.com/u/huweihuang"
-    }
-]
+# friends: [
+#     {
+#         title: "CSDN Blog 胡伟煌",
+#         href: "http://blog.csdn.net/huwh_"
+#     },
+#     {
+#         title: "DockOne 胡伟煌",
+#         href: "http://dockone.io/people/胡伟煌"
+#     },
+#     {
+#         title: "阿里云栖社区 胡伟煌",
+#         href: "https://yq.aliyun.com/u/huweihuang"
+#     }
+# ]
 
 
 #Custom Setting End
@@ -209,8 +209,8 @@ data-fixed: true
 # Reward
 reward: true
 reward_comment: 赞赏一下
-wechatpay: /img/header_img/home.jpg
-alipay: /img/header_img/home.jpg
+wechatpay: /img/reward/wechatpay.jpg
+alipay: /img/reward/alipay.jpg
 
 # Share
 # Reference: https://github.com/overtrue/share.js
