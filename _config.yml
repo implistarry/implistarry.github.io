@@ -19,7 +19,7 @@ root: /
 #permalink: :year/:month/:day/:title/
 permalink: :category/:title/
 permalink_defaults:
-  lang: en
+  lang: zh-CN
 
 #Custom Setting Start
 
@@ -185,7 +185,7 @@ markdown:
     linkify: true
     typographer: true
     quotes: '“”‘’'
-  
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 
