@@ -66,6 +66,7 @@ gitalk:
   clientSecret: c3fbd2890ef11b4aef55616034e3f444d71f9ff8 #`Github Application clientSecret`
   id: location.pathname
   distractionFreeMode: true
+  createIssueManually : 
 
 # Analytics settings
 #Baidu Analytics
