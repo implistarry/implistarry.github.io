@@ -1,12 +1,11 @@
 > Ported Theme of [Hux Blog](https://github.com/Huxpro/huxpro.github.io), Thank [Huxpro](https://github.com/Huxpro) for designing such a flawless theme.
 >
-> This HuWeihuang theme created by [HuWeihuang](http://www.huweihuang.com/) modified from the original Porter [YuHsuan](https://github.com/YenYuHsuan/hexo-theme-beantech).
-> 
-> This theme has been published to the [hexo theme list](https://hexo.io/themes/).
+> This theme created by [Lindong](https://www.lddong.tk/) modified from the original Porter [HuWeihuang](http://www.huweihuang.com/)).
+
 
 # Live Demo
 
-Hu Weihuang Blog : [www.huweihuang.com](http://www.huweihuang.com/)
+Hu Weihuang Blog : [www.lddong.tk](https://www.lddong.tk/)
 
 ![Theme_HuWeihuang](https://res.cloudinary.com/dqxtn0ick/image/upload/v1553666111/blog/blog.jpg)
 

@@ -160,7 +160,18 @@ layout: layout
                 <ul class="list-inline">
 
                     <% config.friends.forEach(function(friend){ %>
-                        <li><a href="<%= friend.href %>" target="_blank"><%= friend.title %></a></li>
+                        <li>
+                            <div>
+                            <a href="<%= friend.href %>" target="_blank"><%= friend.title %></a>
+                            <% if(friend.star){ %>
+                                <iframe
+                                    style="margin-left: 2px; margin-bottom:-5px;"
+                                    frameborder="0" scrolling="0" width="91px" height="20px"
+                                    src="<%= friend.star %>" >
+                                </iframe>
+                            <% } %>
+                            </div>
+                        </li>
                     <% }); %>
                 </ul>
                 <% }%>
