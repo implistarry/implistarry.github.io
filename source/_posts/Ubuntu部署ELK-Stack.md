@@ -1,4 +1,20 @@
-[TOC]
+---
+title: Ubuntu部署ELK-Stack
+catalog: true
+toc_nav_num: true
+tags:
+  - Ubuntu
+  - Linux
+catagories:
+  - Ubuntu
+  - Linux
+date: 2020-01-09 21:23:32
+subtitle:
+header-img:
+updateDate:
+top: 2
+---
+
 
 # Elasticsearch 7.5.1
 
