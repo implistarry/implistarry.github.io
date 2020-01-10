@@ -3,9 +3,9 @@ title: 超详细Monit安装与配置
 catalog: true
 toc_nav_num: true
 tags:
-  - null
+  - 监控
 catagories:
-  - null
+  - 开源工具
 date: 2020-01-10 14:14:21
 subtitle:
 header-img:
@@ -102,17 +102,15 @@ Monit可以监控服务器进程状态、HTTP/TCP状态码、服务器资源变�
 	monit start mongo # 启动mongo服务
 	monit -V # 查看版本
 
----
+## 常见监控方法：
 
-# 常见监控方法：
-
-## 1、根据ip+端口，监控web服务器端口存活：
+### 1、根据ip+端口，监控web服务器端口存活：
 
 	check host gamecenter_api_10.153.123.2 with address 10.153.123.2
 	    if failed port 8093 with timeout 1 seconds for 2 cycles then exec "/data/apps/monit/contrib/sms.py"
 表示：在两次监控周期内，如果端口超时超过1m则报警。
 
-## 2、根据pid，监控服务进程：
+### 2、根据pid，监控服务进程：
 
 	check process tomcat with pidfile /var/run/catalina.pid     # 进程pid
 	    start program = "/etc/init.d/tomcat start"              # 设置启动命令
@@ -124,7 +122,7 @@ Monit可以监控服务器进程状态、HTTP/TCP状态码、服务器资源变�
 
 >  start和stop的program参数里的命令必须是全路径，否则monit不能正常启动，比如killall应该是/usr/bin/killall
 
-## 3、可以对moint本身服务器进行监控：
+### 3、可以对moint本身服务器进行监控：
 
  系统名称，可以是IP或域名
 
@@ -138,14 +136,14 @@ Monit可以监控服务器进程状态、HTTP/TCP状态码、服务器资源变�
 
 ---
 ---
-# 语法详解
+## 语法详解
 
-## mailserver 支持格式为：
+### mailserver 支持格式为：
 	SET MAILSERVER <hostname|ip-address [PORT number] [USERNAME string] [PASSWORD string] [using SSLAUTO|SSLV2|SSLV3|TLSV1|TLSV11|TLSV12] [CERTMD5 checksum]>, ...
 	                [with TIMEOUT X SECONDS]
 	                [using HOSTNAME hostname]
 
-## 服务类型
+### 服务类型
 
 首先需要理解在monit里什么是服务(service)。看监控语法：
 
@@ -309,3 +307,4 @@ Monit将查询名称服务器以检查任何尝试连接的主机。如果主机
 	      allow @admins
 	      allow @users read-only
 通过在 username：password 后使用只读关键字将用户设置为只读。在上述示例中，用户hauk被定义为只读用户，而admin用户具有所有访问权限。
+

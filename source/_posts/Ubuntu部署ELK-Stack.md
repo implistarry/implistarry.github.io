@@ -5,9 +5,12 @@ toc_nav_num: true
 tags:
   - Ubuntu
   - Linux
+  - 监控
+  - 日志
 catagories:
   - Ubuntu
   - Linux
+  - 开源工具
 top: 2
 abbrlink: c54a
 date: 2020-01-09 21:23:32
@@ -40,7 +43,7 @@ updateDate:
 
 文件内容:
 
-	
+
 	node.name: node-1
 	
 	# ----------------------------------- Paths ------------------------------------
@@ -79,7 +82,7 @@ updateDate:
 	cluster.initial_master_nodes: ["node-1"]
 	#
 	# For more information, consult the discovery and cluster formation module documentation.
-	
+
 
 
 ## 运行
@@ -143,7 +146,7 @@ kibana-7.5.1-linux-x86_64/config/kibana.yml
 位置: filebeat-7.5.1-linux-x86_64/filebeat.yml
 文件内容:
 
-	
+
 	filebeat.inputs:
 	
 	# Each - is an input. Most options can be set at the input level, so
@@ -159,7 +162,7 @@ kibana-7.5.1-linux-x86_64/config/kibana.yml
 	  paths:
 		- /var/log/*.log
 		#- c:\programdata\elasticsearch\logs\*
-	
+
 
 
 	#============================= Filebeat modules ===============================
