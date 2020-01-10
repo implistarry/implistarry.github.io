@@ -11,7 +11,6 @@ catagories:
   - Ubuntu
   - Linux
   - 开源工具
-top: 2
 abbrlink: c54a
 date: 2020-01-09 21:23:32
 subtitle:
