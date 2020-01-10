@@ -196,15 +196,6 @@ layout: layout
         distractionFreeMode: '<%= theme.gitalk.distractionFreeMode %>',
         createIssueManually: '<%= theme.gitalk.createIssueManually %>'
     })
-    console.log(decodeURI(location.pathname));
-    console.log(decodeURI(window.location.pathname));
-    console.log('<%= theme.gitalk.repo %>');
-    console.log('<%= theme.gitalk.clientID %>');
-    console.log('<%= theme.gitalk.clientSecret %>');
-    console.log('<%= theme.gitalk.id %>');
-    console.log('<%= theme.gitalk.repo %>');
-    console.log('<%= theme.gitalk.owner %>');
-    console.log('<%= theme.gitalk.admin %>');
     gitalk.render('gitalk-container')
 </script>
 <!-- GitTalk公共JS代码 end -->
