@@ -1,5 +1,5 @@
 ---
-title: PM2安装与配置t安装
+title: PM2安装与配置
 catalog: true
 toc_nav_num: true
 tags:
