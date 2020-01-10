@@ -8,11 +8,12 @@ tags:
 catagories:
   - Python
   - Linux
+top: 1
+abbrlink: '8838'
 date: 2020-01-09 21:23:32
 subtitle:
 header-img:
 updateDate:
-top: 1
 ---
 
 # 安装检查

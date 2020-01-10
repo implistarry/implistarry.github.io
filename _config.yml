@@ -17,7 +17,19 @@ timezone: Asia/Shanghai
 url: https://lddong.tk       # Note: don't forget to modify the CNAME file to your url
 root: /
 #permalink: :year/:month/:day/:title/
-permalink: :category/:title/
+permalink: posts/:abbrlink.html
+abbrlink:
+    alg: crc16   #算法： crc16(default) and crc32
+    rep: hex     #进制： dec(default) and hex
+    #示例
+    # crc16 & hex
+    # https://post.zz173.com/posts/66c8.html
+    # crc16 & dec
+    # https://post.zz173.com/posts/65535.html
+    # crc32 & hex
+    # https://post.zz173.com/posts/8ddf18fb.html
+    # crc32 & dec
+    # https://post.zz173.com/posts/1690090958.html
 permalink_defaults:
   lang: zh-CN
 
@@ -104,7 +116,7 @@ featured-condition-size: 0              # A tag will be featured if the size of 
 friends: [
     {
         title: "Hu Weihuang Blog",
-        href: "www.huweihuang.com",
+        href: "https://www.huweihuang.com",
         star: "https://ghbtns.com/github-btn.html?user=huweihuang&repo=hexo-theme-huweihuang&type=star&count=true"
     }
 ]
@@ -203,7 +215,7 @@ markdown:
 # MeingJS support for Aplayer
 # reference: https://github.com/metowolf/MetingJS & https://github.com/MoePlayer/APlayer
 metingjs: true
-data-id: 2423410161
+data-id: 78250571
 data-server: netease  
 data-type: playlist
 data-fixed: true
