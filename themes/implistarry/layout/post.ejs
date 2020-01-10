@@ -196,6 +196,7 @@ layout: layout
         distractionFreeMode: '<%= theme.gitalk.distractionFreeMode %>',
         createIssueManually: '<%= theme.gitalk.createIssueManually %>'
     })
+    console.log(decodeURI(location.pathname));
     console.log(decodeURI(window.location.pathname));
     console.log('<%= theme.gitalk.repo %>');
     console.log('<%= theme.gitalk.clientID %>');

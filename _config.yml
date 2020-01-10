@@ -60,13 +60,13 @@ anchorjs: true                          # if you want to customize anchor. check
 gitalk:
   enable: true #用来做启用判断可以不用
   owner: implistarry #Github 用户名,
-  repo: blogtalk #储存评论issue的github仓库名
-  admin: ['implistarry@163.com'] #Github 用户名,
-  clientID: 891c9639c873f63aff05 #`Github Application clientID`
-  clientSecret: c3fbd2890ef11b4aef55616034e3f444d71f9ff8 #`Github Application clientSecret`
+  repo: gitalk_comment #储存评论issue的github仓库名
+  admin: ['implistarry'] #Github 用户名,
+  clientID: 3e03a80d0e2becaa54a6 #`Github Application clientID`
+  clientSecret: ffd3f29958caa2efd0fa2391800e4aaafc4ba763 #`Github Application clientSecret`
   id: location.pathname
   distractionFreeMode: true
-  createIssueManually : false
+  createIssueManually : true
 
 # Analytics settings
 #Baidu Analytics
@@ -106,11 +106,6 @@ friends: [
         title: "Hu Weihuang Blog",
         href: "www.huweihuang.com",
         star: "https://ghbtns.com/github-btn.html?user=huweihuang&repo=hexo-theme-huweihuang&type=star&count=true"
-    },
-    {
-        title: "Hu Weihuang Blog",
-        href: "www.huweihuang.com",
-        star: 
     }
 ]
 
