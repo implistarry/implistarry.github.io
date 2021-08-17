@@ -34,11 +34,11 @@
 
 <script>
     const CONFIG_BGIMAGE = {
-      mode: 'normal',
+      mode: 'random_you',
       normalSrc: '/img/header-bg.jpg',
       randomYouMax: 110,
       randomYouSrc: 'https://implistarry.github.io/Random-img/',
-	  randomOtherSrc: '/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
 	  preloaderEnable: true
     }
 	
@@ -56,10 +56,11 @@
 	<div id="preloader">
 		<div class="pre-container">
 			
-				<div class="transition">
-					<div class="three-bounce1"></div>
-					<div class="three-bounce2"></div>
-					<div class="three-bounce3"></div>
+				<div class="cyclic">
+					<div><span></span></div>
+					<div><span></span></div>
+					<div><span></span></div>
+					<div><span></span></div>
 				</div>
 						
 		</div>
