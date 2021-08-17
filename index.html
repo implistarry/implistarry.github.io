@@ -37,8 +37,8 @@
       mode: 'normal',
       normalSrc: '/img/header-bg.jpg',
       randomYouMax: 110,
-      randomYouSrc: 'https://sariay.github.io/Random-img/',
-	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+      randomYouSrc: 'https://implistarry.github.io/Random-img/',
+	  randomOtherSrc: '/',
 	  preloaderEnable: true
     }
 	
@@ -56,9 +56,10 @@
 	<div id="preloader">
 		<div class="pre-container">
 			
-				<div class="spinner">
-					<div class="double-bounce1"></div>
-					<div class="double-bounce2"></div>
+				<div class="transition">
+					<div class="three-bounce1"></div>
+					<div class="three-bounce2"></div>
+					<div class="three-bounce3"></div>
 				</div>
 						
 		</div>
@@ -224,83 +225,128 @@
 
 
 
-	<!--cart style-->
-	<div class="layout-cart">
-	<div id="layout-cart">
+	<!--pure style-->
+	<div class="layout-pure">
+	<div id="layout-pure">	
 		
 			<div class="post" id="post">
-				<a class="post-cover" href="/uncategorized/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" title=" 面试高频问题整理 " target="_blank">
-					
-					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
-				</a>
-
 				<div class="post-text">
-					<p class="post-time">
-						八月 17日, 2021
-					</p>	
-					<h3 class="post-title" id="post-title-index">
-						<a href="/uncategorized/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" title="面试高频问题整理">							
-							
-	<a href="/uncategorized/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" itemprop="url">
+					<div class="post-title" id="post-title-index">			
+						
+	<a href="/HEXO%E5%8D%9A%E5%AE%A2/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" itemprop="url">
 		面试高频问题整理
 	</a>
 
-						</a>
-					</h3>
-					<p class="post-content">
+					</div>
+
+					<div class="post-content">
 						
 							高频问题
 
 HashMap 1.7，1.8的差异，1.8中什么情况下转换为红黑树，构造函数中参数代表的意思。
 
 
-参考: https://www.geek...
+参考: https://www.geek-share.com/detail/2810195384.html
+
+
+用什么Map可以保证线程安全，为什么？ConcurrentHashMap为什么能保证线程安全？1.7和1.8原理有什么差异。
+
+有多少种单例模式，枚举算不算单例，单例模式中不用volatile会导致什么问题？volatile特性是什么？为什么android中不推荐使用枚举。
+
+Glide中怎么实现图片的加载进度条，Glide的缓存是怎么设计的？为什么要用弱引用。
+
+...
 						
-					</p>
-					<p class="post-meta">
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							发布于
+							<i>
+								
+
+
+
+
+
+
+	<a href="/HEXO%E5%8D%9A%E5%AE%A2/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" itemprop="url">
+		<time datetime="2021-08-17T01:14:51.000Z" itemprop="datePublished">
+	  		2021-08-17
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
 						
 
 
 
-					</p>
+						
+							<span class="right">      	
+								<a href="/HEXO%E5%8D%9A%E5%AE%A2/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" title="阅读全文" external="false">阅读全文</a>	
+							</span>
+						
+					</div>
 				</div>
 			</div>
 		
 			<div class="post" id="post">
-				<a class="post-cover" href="/uncategorized/hello-world/" title=" Hello World " target="_blank">
-					
-					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
-				</a>
-
 				<div class="post-text">
-					<p class="post-time">
-						七月 28日, 2021
-					</p>	
-					<h3 class="post-title" id="post-title-index">
-						<a href="/uncategorized/hello-world/" title="Hello World">							
-							
+					<div class="post-title" id="post-title-index">			
+						
 	<a href="/uncategorized/hello-world/" itemprop="url">
 		Hello World
 	</a>
 
-						</a>
-					</h3>
-					<p class="post-content">
+					</div>
+
+					<div class="post-content">
 						
-							Welcome to Hexo! This is your very first post. Check documentation for more i...
+							Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
+
+More info: Writing
+Run server1$ hexo ...
 						
-					</p>
-					<p class="post-meta">
+					</div>
+					
+					<div class="post-meta">
+						<span>
+							发布于
+							<i>
+								
+
+
+
+
+
+
+	<a href="/uncategorized/hello-world/" itemprop="url">
+		<time datetime="2021-07-28T06:22:18.124Z" itemprop="datePublished">
+	  		2021-07-28
+	  </time>
+	</a> 
+
+							</i>
+						</span>
+						
 						
 
 
 
-					</p>
+						
+							<span class="right">      	
+								<a href="/uncategorized/hello-world/" title="阅读全文" external="false">阅读全文</a>	
+							</span>
+						
+					</div>
 				</div>
 			</div>
 		
 	</div>
-	
+
 	
 	<div id="pagination">
 		
@@ -309,7 +355,7 @@ HashMap 1.7，1.8的差异，1.8中什么情况下转换为红黑树，构造函
 	
 
 </div>
-	
+
 
 		</main>
 
@@ -372,6 +418,21 @@ HashMap 1.7，1.8的差异，1.8中什么情况下转换为红黑树，构造函
 	<!-- busuanzi -->
 	<!-- busuanzi -->
 
+		
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+
+		<span id="busuanzi_container_site_pv">
+	    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+		</span>
+
+		<span id="busuanzi_container_site_uv">
+	  		本站访客数<span id="busuanzi_value_site_uv"></span>人次
+		</span>
+		
+	
+
+
 
 
 			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
@@ -381,29 +442,40 @@ HashMap 1.7，1.8的差异，1.8中什么情况下转换为红黑树，构造函
 </footer>
 		
 	<!-- Local or hitokoto! -->
-
-	
-<script src="/plugin/motto/motto.js"></script>
-
-	
-	<script type="text/javascript">
+ 
+	<!-- 现代写法，推荐 -->
+	<!-- 兼容低版本浏览器 (包括 IE)，可移除 -->
+	<script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+	<!--End-->
+	<script>
 		(function motto(){
-			let mottoText = getMingYanContent().split('</br> - </br>'),
-			
-			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
-			
-			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
-			
-			mottoTextContent = mottoTextContent.trim().substring(0, 100);
-		
-			$("#motto-content").html( mottoTextContent);
-			$("#motto-author").html( mottoTextFrom  );
-		})();	
-	</script>	
+			fetch('https://v1.hitokoto.cn/?c=d')
+				.then(function (res){
+				return res.json();
+			}).then(function (data) {
+				$("#motto-content").html( data.hitokoto?data.hitokoto:'请刷新...' );
+				
+				let	mottoAuthor =' ';
+					mottoAuthor += data.creator?data.creator:'一言';
+					mottoAuthor += "　/　";
+					mottoAuthor += data.from?data.from:'一言官网';
+					
+				$("#motto-author").html( mottoAuthor );
+			})
+			.catch(function (err) {
+				console.error(err);
+			})			
+		})();
+	</script>
 
 
 
 <!-- love effect -->
+
+	
+<script src="/plugin/love/love.js"></script>
+
 
 
 <!-- back to top -->

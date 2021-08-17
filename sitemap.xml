@@ -2,7 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://implistarry.github.io/uncategorized/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/</loc>
+    <loc>http://implistarry.github.io/HEXO%E5%8D%9A%E5%AE%A2/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/</loc>
+    
+    <lastmod>2021-08-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://implistarry.github.io/tags/index.html</loc>
+    
+    <lastmod>2021-08-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://implistarry.github.io/gallery/index.html</loc>
+    
+    <lastmod>2021-08-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://implistarry.github.io/about/index.html</loc>
     
     <lastmod>2021-08-17</lastmod>
     
@@ -24,6 +45,27 @@
   </url>
 
   
+  <url>
+    <loc>http://implistarry.github.io/tags/%E9%9D%A2%E8%AF%95/</loc>
+    <lastmod>2021-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://implistarry.github.io/tags/other-tag/</loc>
+    <lastmod>2021-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>http://implistarry.github.io/categories/HEXO%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2021-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>

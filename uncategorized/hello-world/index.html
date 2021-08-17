@@ -37,8 +37,8 @@
       mode: 'normal',
       normalSrc: '/img/header-bg.jpg',
       randomYouMax: 110,
-      randomYouSrc: 'https://sariay.github.io/Random-img/',
-	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+      randomYouSrc: 'https://implistarry.github.io/Random-img/',
+	  randomOtherSrc: '/',
 	  preloaderEnable: true
     }
 	
@@ -56,9 +56,10 @@
 	<div id="preloader">
 		<div class="pre-container">
 			
-				<div class="spinner">
-					<div class="double-bounce1"></div>
-					<div class="double-bounce2"></div>
+				<div class="transition">
+					<div class="three-bounce1"></div>
+					<div class="three-bounce2"></div>
+					<div class="three-bounce3"></div>
 				</div>
 						
 		</div>
@@ -314,7 +315,7 @@
 	<span>
 		<a id="totop-post-page">返回顶部</a>
 		
-			<a href="/uncategorized/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" title="面试高频问题整理" rel="prev">
+			<a href="/HEXO%E5%8D%9A%E5%AE%A2/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" title="面试高频问题整理" rel="prev">
 				&laquo;上一篇
 			</a>
 		
@@ -336,7 +337,7 @@
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/uncategorized/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" title="面试高频问题整理">
+							<a class="relate-post-title" href="/HEXO%E5%8D%9A%E5%AE%A2/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" title="面试高频问题整理">
 								面试高频问题整理			
 							</a>
 							<p class="relate-post-date">
@@ -357,9 +358,9 @@ HashMap 1.7，1.8的差异，1.8中什么情况下转换为红黑树，构造函
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/uncategorized/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" title="面试高频问题整理">				
+							<a href="/HEXO%E5%8D%9A%E5%AE%A2/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" title="面试高频问题整理">				
 								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="面试高频问题整理"/>
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/post-cover/70.jpg" alt="面试高频问题整理"/>
 							</a>
 						</div>
 					</li>												
@@ -666,6 +667,17 @@ HashMap 1.7，1.8的差异，1.8中什么情况下转换为红黑树，构造函
 	<!-- busuanzi -->
 	<!-- busuanzi -->
 
+		
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+
+		<span id="busuanzi_container_page_pv">
+	  		本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+		</span>
+
+	
+
+
 
 
 			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
@@ -675,29 +687,40 @@ HashMap 1.7，1.8的差异，1.8中什么情况下转换为红黑树，构造函
 </footer>
 		
 	<!-- Local or hitokoto! -->
-
-	
-<script src="/plugin/motto/motto.js"></script>
-
-	
-	<script type="text/javascript">
+ 
+	<!-- 现代写法，推荐 -->
+	<!-- 兼容低版本浏览器 (包括 IE)，可移除 -->
+	<script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+	<!--End-->
+	<script>
 		(function motto(){
-			let mottoText = getMingYanContent().split('</br> - </br>'),
-			
-			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
-			
-			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
-			
-			mottoTextContent = mottoTextContent.trim().substring(0, 100);
-		
-			$("#motto-content").html( mottoTextContent);
-			$("#motto-author").html( mottoTextFrom  );
-		})();	
-	</script>	
+			fetch('https://v1.hitokoto.cn/?c=d')
+				.then(function (res){
+				return res.json();
+			}).then(function (data) {
+				$("#motto-content").html( data.hitokoto?data.hitokoto:'请刷新...' );
+				
+				let	mottoAuthor =' ';
+					mottoAuthor += data.creator?data.creator:'一言';
+					mottoAuthor += "　/　";
+					mottoAuthor += data.from?data.from:'一言官网';
+					
+				$("#motto-author").html( mottoAuthor );
+			})
+			.catch(function (err) {
+				console.error(err);
+			})			
+		})();
+	</script>
 
 
 
 <!-- love effect -->
+
+	
+<script src="/plugin/love/love.js"></script>
+
 
 
 <!-- back to top -->
