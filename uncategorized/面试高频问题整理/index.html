@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      Hello World | Donland
+      面试高频问题整理 | Donland
     
   </title>
   <meta name="author" content="Lindong·D">
@@ -100,7 +100,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「Hello World」
+			「面试高频问题整理」
 		
 	</p>
 
@@ -227,27 +227,14 @@
 		插件作者：KELEN
 		插件来源: https://github.com/KELEN/katelog
 -->
-
-	
-		<div class="layout-toc">
-			<div id="layout-toc">
-				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
-			</div>
-		</div>
-
-		
-<script src="/plugin/toc/katelog.min.js"></script>
-
-
-		
 	 
 
 <div class="layout-post">
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/uncategorized/hello-world/" itemprop="url">
-		Hello World
+	<a href="/uncategorized/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" itemprop="url">
+		面试高频问题整理
 	</a>
 
 		</div>
@@ -263,9 +250,9 @@
 
 	更新于
 
-	<a href="/uncategorized/hello-world/" itemprop="url">
-		<time datetime="2021-07-28T06:22:18.124Z" itemprop="dateUpdated">
-	  		1985-10-26
+	<a href="/uncategorized/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" itemprop="url">
+		<time datetime="2021-08-17T01:14:51.000Z" itemprop="dateUpdated">
+	  		2021-08-17
 	  </time>
 	</a> 
 
@@ -283,19 +270,123 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-			<p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+			<p>高频问题</p>
+<ol>
+<li>HashMap 1.7，1.8的差异，1.8中什么情况下转换为红黑树，构造函数中参数代表的意思。</li>
+</ol>
+<blockquote>
+<p>参考: <a target="_blank" rel="noopener" href="https://www.geek-share.com/detail/2810195384.html">https://www.geek-share.com/detail/2810195384.html</a></p>
+</blockquote>
+<ol>
+<li><p>用什么Map可以保证线程安全，为什么？ConcurrentHashMap为什么能保证线程安全？1.7和1.8原理有什么差异。</p>
+</li>
+<li><p>有多少种单例模式，枚举算不算单例，单例模式中不用volatile会导致什么问题？volatile特性是什么？为什么android中不推荐使用枚举。</p>
+</li>
+<li><p>Glide中怎么实现图片的加载进度条，Glide的缓存是怎么设计的？为什么要用弱引用。</p>
+</li>
+<li><p>implementation 和 api的区别是什么？</p>
+</li>
+<li><p>事件分发的流程，以及怎么解决滑动冲突？</p>
+</li>
+<li><p>事件是怎么产生的？mFirstTarget 为什么是一个链表？</p>
+</li>
+<li><p>自定义View需要经历哪几个过程？</p>
+</li>
+<li><p>A 跳转到 B页面，两个页面的生命周期怎么走？什么情况下A的stop()不会执行。</p>
+</li>
+<li><p> Activity 的4中启动模式分别是什么，有什么不同。</p>
+</li>
+<li><p>okhttp中有几个队列？分别干什么用的？怎么取消一个请求？</p>
+</li>
+<li><p>Rxjava中map和flatMap有什么区别，都用过什么操作符。</p>
+</li>
+<li><p>如果Rxjava组合发送任务，中间任务出现异常，其他任务该怎么处理。</p>
+</li>
+<li><p>哪个场景会发生内存泄露，内存泄露怎么检测，怎么解决。以及leak cannery内部原理是什么？为什么新版本的不需要在Application中注册了。</p>
+</li>
+<li><p>手机适配问题怎么处理，都有什么方案。</p>
+</li>
+<li><p>Android9 10 11 都更新了什么新特性，新版本中无法获取IMEI怎么处理。</p>
+</li>
+<li><p>数据序列化有哪两种方式，Serialization和Parcelable区别，如果持久化需要用哪一个？</p>
+</li>
+<li><p>组件化怎么分层，各个组件之间怎么通信。</p>
+</li>
+<li><p>怎防止程序崩溃，如果已经到了Thread.UncaughtExceptionHandler是否可以让程序继续运行。</p>
+</li>
+<li><p>Handler Looper mesaageQueue message 之间的关系。</p>
+</li>
+<li><p>子线程一定不能更新ui么？什么时候可以？什么时候不可以。检测逻辑是在什么阶段初始化的。</p>
+</li>
+</ol>
+<blockquote>
+<p>参考:<br><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904131136618510">https://juejin.cn/post/6844904131136618510</a></p>
+</blockquote>
+<ul>
+<li><p>任何线程都可以更新自己创建的 UI。只要保证满足下面几个条件就好了</p>
+<ul>
+<li><p>在 ViewRootImpl 还没创建出来之前</p>
+</li>
+<li><p>UI 修改的操作没有线程限制。</p>
+</li>
+</ul>
+</li>
+<li><p>在 ViewRootImpl 创建完成之后</p>
+<ul>
+<li><p>保证「创建 ViewRootImpl 的操作」和「执行修改 UI 的操作」在同一个线程即可。也就是说，要在同一个线程调用 ViewManager#addView 和 ViewManager#updateViewLayout 的方法。</p>
+<blockquote>
+<p>注：ViewManager 是一个接口，WindowManger 接口继承了这个接口，我们通常都是通过 WindowManger（具体实现为 WindowMangerImpl） 进行 view 的 add remove update 操作的。</p>
+</blockquote>
+</li>
+<li><p>对应的线程需要创建 Looper 并且调用 Looper#loop 方法，开启消息循环。</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>条件 1 可以避免检查异常，但是无法保证 UI 可以被绘制出来。<br>条件 2 可以让更新的 UI 效果呈现出来</p>
+<p>WindowManger#addView 最终会调用 WindowManageGlobal#addView 方法，进而触发ViewRootImpl#setView 方法，该方法内部会调用 ViewRootImpl#requestLayout 方法。<br>了解过 UI 绘制原理的同学应该知道 下一步就是 scheduleTraversals 了，该方法会往消息队列中插入一条消息屏障，然后调用 Choreographer#postCallback 方法，往 looper 中插入一条异步的 MSG_DO_SCHEDULE_CALLBACK 消息。等待垂直同步信号回来之后执行。</p>
+<p>注：ViewRootImpl 有一个 Choreographer  成员变量，ViewRootImpl 的构造函数中会调用 Choreographer#getInstance(); 方法，获取一个当前线程的 Choreographer 局部实例。</p>
+<ol>
+<li><p> ANR发生的原理是什么， 怎么排查。</p>
+</li>
+<li><p> 程序怎么保活。</p>
+</li>
+<li><p> 说下路由ARoute的实现原理，怎么处理页面过多内存占用过大问题。</p>
+</li>
+<li><p> 线程池都什么时候用，怎么创建，构造函数中的参数分别代表什么意思？</p>
+</li>
+<li><p> 进程优先级。</p>
+</li>
+<li><p> 反向输出字符串。</p>
+</li>
+<li><p> 两个有序链表合并。</p>
+</li>
+<li><p> 字符串移除多余空格，且技术单词首字符大写。</p>
+</li>
+<li><p> 二叉树中和为某一值的路径。</p>
+</li>
+<li><p>本地广播和正常广播的区别。</p>
+</li>
+<li><p>二进制低位转高位。</p>
+</li>
+<li><p>字符串数组判重。</p>
+</li>
+<li><p>二叉树 判断是否为搜索二叉树。</p>
+</li>
+<li><p>Activity启动流程，Launcher启动流程。</p>
+</li>
+</ol>
+<p>现场写生产消费者模型<br>：1.thread wait sleep join 有什么区别，主要考察wait sleep相关区别。2.mvvp 和mvp的区别，细节里怎么实现的双向绑定。3.打渠道包 怎么写入渠道数据（app签名在哪）这里涉及V1,V2,V3签名差异。4.rgb565和rgb888有什么区别，主要考察数据存储位。5.自定义view，实现一个自定义View，且支持按下放大，松开缩小动画。<br>Glide存储方式，每一个Activity缓存图片是否分开缓存，算法相关考察了按层遍历二叉树，并输出每层的最后一个节点，并且进行了4 -5 种变化，每种变化实现方式。<br>两个有序链表合并。字符串移除多余空格，且技术单词首字符大写。</p>
+<p>如果想统一项目的线程池，包括三方引入包的线程池，怎么处理。（最后解答可通过字节码修改实现）</p>
+<p>如果想监控某一线程的耗时超过300毫秒的任务需要怎么操作。（可反射获取Handler抓取每个Message的执行耗时）</p>
+<p>如果项目出现未捕获的异常，怎么预操作可以防止Crash。</p>
+<p>如果设计一个App的启动框架，需要考虑什么问题，怎么处理同步异步的加载任务调度。</p>
+<p>glide 加载原理，怎么感知加载和暂停。</p>
+<p>okhttp加载原理，怎么控制同步和异步任务。</p>
+<p>说一个项目难点，具体怎么解决的。</p>
+<p>都用过什么设计模式。</p>
+<p>mvp mvvm都在什么场景下使用。</p>
+<p>一个int数组怎么判断是搜索二叉树的后续遍历。</p>
 	
 		</div>
 		
@@ -314,10 +405,10 @@
 	<span>
 		<a id="totop-post-page">返回顶部</a>
 		
-			<a href="/uncategorized/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" title="面试高频问题整理" rel="prev">
-				&laquo;上一篇
-			</a>
 		
+			<a href="/uncategorized/hello-world/" title="Hello World" rel="next">
+				下一篇&raquo;
+			</a>
 			
 	</span>
 
@@ -336,30 +427,22 @@
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/uncategorized/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" title="面试高频问题整理">
-								面试高频问题整理			
+							<a class="relate-post-title" href="/uncategorized/hello-world/" title="Hello World">
+								Hello World			
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
-								八月 17日, 2021				
+								七月 28日, 2021				
 							</p>
 							<p class="relate-post-content">
-								高频问题
-
-HashMap 1.7，1.8的差异，1.8中什么情况下转换为红黑树，构造函数中参数代表的意思。
-
-
-参考: https://www.geek-share.com/detail/2810195384.html
-
-
-用什么M...
+								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
 							</p>
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/uncategorized/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" title="面试高频问题整理">				
+							<a href="/uncategorized/hello-world/" title="Hello World">				
 								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="面试高频问题整理"/>
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Hello World"/>
 							</a>
 						</div>
 					</li>												
